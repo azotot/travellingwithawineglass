@@ -1,0 +1,8 @@
+User-agent: *
+Sitemap: http://www.travellingwithawineglass.com/sitemap.xml
+Disallow: /ghost/
+Disallow: /author/
+
+
+User-agent: *
+Disallow: /view.gif
