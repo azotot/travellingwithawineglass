@@ -1,5 +1,10 @@
 <header id="logo" class="page-wrap">
     {{#if @blog.logo}}
+    <div id="social-icons">
+	    <a class="icon-fb" href="https://www.facebook.com/travellingwithawineglass/timeline">Facebook</a>
+	    <a class="icon-twitter" href="https://twitter.com/Travelwineglass">Twitter</a>
+	    <a class="icon-rss" href="{{@blog.url}}/rss/">RSS</a>
+	</div>
     	<a id="logo-image" href="{{@blog.url}}">
     		<img src="{{@blog.logo}}" alt="{{@blog.title}} - {{@blog.description}}" />
     	</a>
