@@ -1,5 +1,13 @@
-<ul class="nav">
-    {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-    {{/foreach}}
-</ul>
+<div class="nav"> 
+2     <h3 class="nav-title">Menu</h3> 
+3     <a href="#" class="nav-close"> 
+4         <span class="hidden">Close</span> 
+5     </a> 
+6     <ul> 
+7         {{#foreach navigation}} 
+8             <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li> 
+9         {{/foreach}} 
+10     </ul> 
+11     <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a> 
+12 </div> 
+13 <span class="nav-cover"></span> 
